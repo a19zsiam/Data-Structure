@@ -45,8 +45,8 @@ public:
 
     void display() {
         cout<<"The full stack is looking like  "<<endl;
-        for(int i=0; i<5; i++)
-            cout<<arr[4-i]<<endl;
+        for(int i=0; i<=top; i++)
+            cout<<arr[top-i]<<endl;
     }
 };
 
@@ -60,13 +60,13 @@ int main() {
         cout<<"3. peek()"<<endl;
         cout<<"4. Display full stake"<<endl;
         cout<<"5. Exit "<<endl;
-        cout<<"Enter your choice"<<endl;
+        cout<<"Enter your choice ";
 
         cin>>choice;
 
         switch(choice) {
         case 1:
-            cout<<"Enter the valeu "<<endl;
+            cout<<"Enter the value ";
             cin>>value;
             s.push(value);
             break;
