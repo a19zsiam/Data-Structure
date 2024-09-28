@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
 
-int n,find,mid=0;
+int n,find,mid=0,count=0;
 cout<<"How many value you want to take?" <<endl;
 cin>>n;
 int arr[n];
@@ -35,8 +35,10 @@ exit(0);
 
 do{
 mid=(hi+lo)/2;
+count++;
 if(arr[mid]==find){
 cout<<"Yes , it is here,, The index num is "<<mid<<endl;
+cout<<"I guess "<<count<<" time to find "<<find;
 break;
 }
 else if(find>arr[mid])
